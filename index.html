@@ -21,7 +21,7 @@
         <a href="">Documentation</a>
       </div>
       <div>
-        <a href=""> JSON REST API SERVER  </a>
+        <a href=""> Language </a>
       </div>
     </div>
   </nav>
@@ -29,18 +29,39 @@
 
   <section class="start">
     <div class="container">
-      <p class="info"> Due to prevent misuse we restrict deleting and updating first 20 elements  </p>
+      <p class="info"> Due to prevent misuse we restrict deleting and updating first 20 elements </p>
       <p class="title "> How to use it </p>
-      <div class="how-users">
-        <p class="title"> GET ALL USERS </p>
-        <p class="subtitle" > Method : GET  </p>
-        <p class="code">  
-          fetch("https://nihatapi.vercel.app").then( res => res.json() ) <br>
-          .then ( () =>  { <br>
-            console.log("res") <br>
-          } ) 
+      <p class="text"> ALl Valid links </p>
+      <p> /users , /products , /countries </p>
+      <p class="subtitle"> Change API_URL to the ones you want </p>
+    </div>
+  </section>
+
+
+  <section class="tuotiral">
+    <div class="container">
+
+      <div class="box">
+        <p class="title"> GET ALL </p>
+        <div class="tabs">
+          <span class="active"> Fetch </span>
+          <span class="tab"> Fetch (async) </span>
+          <span class="tab"> Axios </span>
+          <span class="tab"> Axios (async) </span>
+        </div>
+        <p class="code">
+          const API_URL = "https://nihatapi.vercel.app" <br>
+          fetch(API_URL).then( res => res.json() ) <br>
+          .then ( (res) => { <br>
+          console.log("res") <br>
+          } )
         </p>
+        <div class="extra-methods">
+          axios("https://nihatapai.vercel.app").then( )
+        </div>
       </div>
+
+
     </div>
   </section>
 </body>
