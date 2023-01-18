@@ -18,6 +18,9 @@ app.get('/', (req, res) => {
 
 })
 
+app.get('/users/',(req,res)=>{
+  res.json(users)
+})
 
 
 
