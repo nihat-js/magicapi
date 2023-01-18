@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Index Page </title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <nav>
+    <div class="container">
+      <div class="left">
+        <a href=""> <img src="./svg/github.svg" alt=""> </a>
+      </div>
+      <div class="links">
+        <a href="">Home </a>
+        <a href="">Documentation</a>
+      </div>
+      <div>
+        <a href=""> JSON REST API SERVER  </a>
+      </div>
+    </div>
+  </nav>
+  <!-- <img class="blob-1" src="svg/blob.svg" alt=""> -->
+
+  <section class="start">
+    <div class="container">
+      <p class="info"> Due to prevent misuse we restrict deleting and updating first 20 elements  </p>
+      <p class="title "> How to use it </p>
+      <div class="how-users">
+        <p class="title"> GET ALL USERS </p>
+        <p class="subtitle" > Method : GET  </p>
+        <p class="code">  
+          fetch("https://nihatapi.vercel.app").then( res => res.json() ) <br>
+          .then ( () =>  { <br>
+            console.log("res") <br>
+          } ) 
+        </p>
+      </div>
+    </div>
+  </section>
+</body>
+
+</html>
