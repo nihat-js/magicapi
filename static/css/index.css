@@ -18,9 +18,13 @@ body {
   background: #fffcfc;
 }
 
+.d-none {
+  display: none;
+}
+
 .container {
   padding: 0 1rem;
-  max-width: 1400px;
+  max-width: 1200px;
   margin: 0 auto;
 }
 
@@ -57,8 +61,15 @@ nav .container .links .active {
   background-color: #fdfdfc;
 }
 
+section.start .container .title {
+  font-size: 35px;
+  line-height: 45px;
+  color: hsl(224deg, 90%, 22%);
+  margin-bottom: 25px;
+  font-weight: bold;
+}
 section.start .container .info {
-  padding: 20px 13px;
+  padding: 10px 12px;
   background-color: #fff;
   border: 2px solid #d5d5d5;
   display: inline-block;
@@ -67,41 +78,59 @@ section.start .container .info {
   font-weight: semibold;
   margin-bottom: 10px;
 }
-section.start .container > .title {
-  font-size: 35px;
-  line-height: 45px;
-  color: hsl(224deg, 90%, 22%);
-  margin-bottom: 25px;
-  font-weight: bold;
+
+section.tutorial {
+  padding: 25px 0;
 }
-section.start .container .how {
+section.tutorial .container .box {
   border: 1px solid #d5d5d5;
   border-radius: 6px;
   padding: 20px 25px;
   margin-bottom: 40px;
 }
-section.start .container .how .title {
-  font-size: 20px;
-  margin-bottom: 8px;
+section.tutorial .container .box header {
+  display: flex;
+  justify-content: space-between;
 }
-section.start .container .how .code-versions {
+section.tutorial .container .box header .title {
+  font-size: 20px;
+  margin-bottom: 30px;
+  font-weight: bold;
+}
+section.tutorial .container .box header img {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  padding: 4px 4px;
+  cursor: pointer;
+}
+section.tutorial .container .box header img:hover {
+  background-color: #f1f1f1;
+}
+section.tutorial .container .box .body .tabs {
   display: flex;
 }
-section.start .container .how .code-versions span {
-  padding: 15px 20px;
+section.tutorial .container .box .body .tabs span {
+  padding: 10px 15px;
   background-color: teal;
   color: #fff;
   transition: 0.2s;
+  font-size: 15px;
 }
-section.start .container .how .code-versions span:hover, section.start .container .how .code-versions .active {
-  background-color: #f5f5f5;
+section.tutorial .container .box .body .tabs .active {
+  background-color: hsl(15deg, 10%, 95%);
   color: #191919;
   cursor: pointer;
-  border: 1px solid #d5d5d5;
+  border-left: 1px solid #f1f1f1;
+  border-right: 1px solid #f1f1f1;
 }
-section.start .container .how .code {
-  padding: 20px 25px;
-  background: #f5f5f5;
-  letter-spacing: 1.25px;
-  line-height: 30px;
-}/*# sourceMappingURL=style.css.map */
+section.tutorial .container .box .body .tabs span:hover {
+  background-color: hsl(15deg, 10%, 90%);
+  cursor: pointer;
+}
+section.tutorial .container .box .body .code {
+  padding: 15px 25px;
+  background: hsl(15deg, 20%, 96%);
+  letter-spacing: 1px;
+  line-height: 1.65;
+}/*# sourceMappingURL=index.css.map */

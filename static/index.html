@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Index Page </title>
+  <link rel="stylesheet" href="css/index.css">
+  <script src="js/index.js" defer></script>
+</head>
+
+<body>
+
+  <nav>
+    <div class="container">
+      <div class="left">
+        <a href=""> <img src="./svg/github.svg" alt=""> </a>
+      </div>
+      <div class="links">
+        <a href="">Home </a>
+        <a href="">Documentation</a>
+      </div>
+      <div>
+        <a href=""> Language </a>
+      </div>
+    </div>
+  </nav>
+  <!-- <img class="blob-1" src="svg/blob.svg" alt=""> -->
+
+  <section class="start">
+    <div class="container">
+      <p class="title"> How to use it </p>
+      <p class="subtitle"> Change API_URL to the ones you want </p>
+      <p class="text"> ALl Valid links </p>
+      <p class="links"> /users , /products , /countries </p>
+      <p class="info"> Due to prevent misusing of server we restricted some actions (deleting and updating first 20
+        elements )
+      </p>
+    </div>
+  </section>
+
+
+  <section class="tutorial">
+    <div class="container">
+
+      <div class="box">
+        <header>
+          <p class="title"> GET ALL </p>
+          <p class="action"> <img src="./svg/arrow-down.svg" alt=""> </p>
+        </header>
+        <div class="body">
+          <div class="tabs">
+            <span class="fetch tab  active"> Fetch </span>
+            <span class="fetch-async tab"> Fetch (async) </span>
+            <span class="axios tab"> Axios </span>
+            <span class="axios-async tab"> Axios (async) </span>
+          </div>
+          <div class="codes">
+            <p class="code fetch ">
+              const API_URL = "https://nihatapi.vercel.app/users" <br>
+              fetch(API_URL).then( response => response.json() ) <br>
+              .then ( (data) => { <br>
+              console.log(data) <br>
+              } )
+            </p>
+            <p class="code fetch-async d-none">
+              const API_URL = "https://nihatapi.vercel.app/users" <br>
+              async function getAll (){
+                const response = await fetch(API_URL) <br>
+                const data = await response.json() <br>
+                console.log(data) <br>
+              } <br>
+              getAll() <br>
+            </p>
+            <p class="code axios d-none">
+              const API_URL = "https://nihatapi.vercel.app/users" <br>
+              axios.get(API_URL).then (response => { <br>
+                console.log(data) <br>
+              })
+            </p>
+            <p class="code axios-async d-none">
+              const API_URL = "https://nihatapi.vercel.app/users" <br>
+              async function getALl (){
+                const response = await axios.get(API_URL) <br>
+                console.log(response.data) <br>
+              } <br>
+              getAll()
+            </p>
+            
+          </div>
+        </div>
+      </div>
+
+      <div class="box">
+        <header>
+          <p class="title"> GET ONE BY ID </p>
+          <p class="action"> <img src="./svg/arrow-down.svg" alt=""> </p>
+        </header>
+        <div class="body">
+          <div class="tabs">
+            <span class="fetch tab  active"> Fetch </span>
+            <span class="fetch-async tab"> Fetch (async) </span>
+            <span class="axios tab"> Axios </span>
+            <span class="axios-async tab"> Axios (async) </span>
+          </div>
+          <div class="codes">
+            <p class="code fetch ">
+              const API_URL = "https://nihatapi.vercel.app/users/1" <br>
+              fetch(API_URL).then( response => response.json() ) <br>
+              .then ( (data) => { <br>
+              console.log(data) <br>
+              } )
+            </p>
+            <p class="code fetch-async d-none">
+              const API_URL = "https://nihatapi.vercel.app/users/1" <br>
+              async function getAll (){
+                const response = await fetch(API_URL) <br>
+                const data = await response.json() <br>
+                console.log(data) <br>
+              } <br>
+              getAll() <br>
+            </p>
+            <p class="code axios d-none">
+              const API_URL = "https://nihatapi.vercel.app/users/1" <br>
+              axios.get(API_URL).then (response => { <br>
+                console.log(data) <br>
+              })
+            </p>
+            <p class="code axios-async d-none">
+              const API_URL = "https://nihatapi.vercel.app/users/1" <br>
+              async function getALl (){
+                const response = await axios.get(API_URL) <br>
+                console.log(response.data) <br>
+              } <br>
+              getAll()
+            </p>
+            
+          </div>
+        </div>
+      </div>
+
+      <div class="box">
+        <header>
+          <p class="title"> ADD ONE </p>
+          <p class="action"> <img src="./svg/arrow-down.svg" alt=""> </p>
+        </header>
+        <div class="body">
+          <div class="tabs">
+            <span class="fetch tab  active"> Fetch </span>
+            <span class="fetch-async tab"> Fetch (async) </span>
+            <span class="axios tab"> Axios </span>
+            <span class="axios-async tab"> Axios (async) </span>
+          </div>
+          <div class="codes">
+            <p class="code fetch ">
+              const API_URL = "https://nihatapi.vercel.app/users/1" <br>
+              fetch(API_URL).then( response => response.json() ) <br>
+              .then ( (data) => { <br>
+              console.log(data) <br>
+              } )
+            </p>
+            <p class="code fetch-async d-none">
+              const API_URL = "https://nihatapi.vercel.app/users/1" <br>
+              async function getAll (){
+                const response = await fetch(API_URL) <br>
+                const data = await response.json() <br>
+                console.log(data) <br>
+              } <br>
+              getAll() <br>
+            </p>
+            <p class="code axios d-none">
+              const API_URL = "https://nihatapi.vercel.app/users/1" <br>
+              axios.get(API_URL).then (response => { <br>
+                console.log(data) <br>
+              })
+            </p>
+            <p class="code axios-async d-none">
+              const API_URL = "https://nihatapi.vercel.app/users/1" <br>
+              async function getALl (){
+                const response = await axios.get(API_URL) <br>
+                console.log(response.data) <br>
+              } <br>
+              getAll()
+            </p>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="box">
+        <header>
+          <p class="title"> UPDATE ONE </p>
+          <p class="action"> <img src="./svg/arrow-down.svg" alt=""> </p>
+        </header>
+        <div class="body">
+          <div class="tabs">
+            <span class="fetch tab  active"> Fetch </span>
+            <span class="fetch-async tab"> Fetch (async) </span>
+            <span class="axios tab"> Axios </span>
+            <span class="axios-async tab"> Axios (async) </span>
+          </div>
+          <div class="codes">
+            <p class="code fetch ">
+              const API_URL = "https://nihatapi.vercel.app/users/" <br>
+              const obj = { username : 'debug' }
+              fetch(API_URL,obj).then( response => response.json() ) <br>
+              .then ( (data) => { <br>
+              console.log(data) <br>
+              } )
+            </p>
+            <p class="code fetch-async d-none">
+              const API_URL = "https://nihatapi.vercel.app/users/" <br>
+              const obj = { username : 'debug' }
+              async function getAll (){
+                const response = await fetch(API_URL,{username : "debug"}) <br>
+                const data = await response.json() <br>
+                console.log(data) <br>
+              } <br>
+              getAll() <br>
+            </p>
+            <p class="code axios d-none">
+              const API_URL = "https://nihatapi.vercel.app/users/" <br>
+              const obj = { firstName : 'debug' }
+              axios.get(API_URL,{username: "debug"}).then (response => { <br>
+                console.log(data) <br>
+              })
+            </p>
+            <p class="code axios-async d-none">
+              const API_URL = "https://nihatapi.vercel.app/users/" <br>
+              const obj = { firstName : 'debug' }
+              async function getAll (){
+                const response = await axios.get(API_URL,'debug') <br>
+                console.log(response.data) <br>
+              } <br>
+              getAll()
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="box">
+        <header>
+          <p class="title"> DELETE  ONE </p>
+          <p class="action"> <img src="./svg/arrow-down.svg" alt=""> </p>
+        </header>
+        <div class="body">
+          <div class="tabs">
+            <span class="fetch tab  active"> Fetch </span>
+            <span class="fetch-async tab"> Fetch (async) </span>
+            <span class="axios tab"> Axios </span>
+            <span class="axios-async tab"> Axios (async) </span>
+          </div>
+          <div class="codes">
+            <p class="code fetch ">
+              const API_URL = "https://nihatapi.vercel.app/users/" <br>
+              const obj = { username : 'debug' }
+              fetch(API_URL,obj).then( response => response.json() ) <br>
+              .then ( (data) => { <br>
+              console.log(data) <br>
+              } )
+            </p>
+            <p class="code fetch-async d-none">
+              const API_URL = "https://nihatapi.vercel.app/users/" <br>
+              const obj = { username : 'debug' }
+              async function getAll (){
+                const response = await fetch(API_URL,{username : "debug"}) <br>
+                const data = await response.json() <br>
+                console.log(data) <br>
+              } <br>
+              getAll() <br>
+            </p>
+            <p class="code axios d-none">
+              const API_URL = "https://nihatapi.vercel.app/users/" <br>
+              const obj = { firstName : 'debug' }
+              axios.get(API_URL,{username: "debug"}).then (response => { <br>
+                console.log(data) <br>
+              })
+            </p>
+            <p class="code axios-async d-none">
+              const API_URL = "https://nihatapi.vercel.app/users/" <br>
+              const obj = { firstName : 'debug' }
+              async function getAll (){
+                const response = await axios.get(API_URL,'debug') <br>
+                console.log(response.data) <br>
+              } <br>
+              getAll()
+            </p>
+          </div>
+        </div>
+      </div>        
+
+    </div>
+  </section>
+</body>
+
+</html>
