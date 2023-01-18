@@ -19,9 +19,6 @@ app.get('/',(req,res)=>{
 const mongoose = require("mongoose")
 mongoose.set('strictQuery', false);
 mongoose.connect(process.env.DB_URI)
-
-
-
 app.listen(PORT, () => console.log(`server started on ${PORT}`) )
 module.exports = app
 

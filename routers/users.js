@@ -5,11 +5,6 @@ const mongoose = require("mongoose")
 
 
 const User = mongoose.model("users", new mongoose.Schema({},{timestamps:true , strict : false })  , )
-// const newUser = new User ({
-//   name : 'whoami',
-//   password :'zerma9921'
-// }) 
-// newUser.save()
 
 
 
@@ -30,23 +25,29 @@ router.get("/:id", async (req, res) => {
 })
 
 router.post("/", async (req, res) => {
+  let result;
   const obj = {}
   for(const x in  req.body){
-    if (x == "_id"){
+    if (x == "_id" || x == "id"){
       continue
     }
     obj[x] = req.body[x]
   }
+  result = await User.find().sort({id:-1}).limit(1)
+  console.log(result)
+
   const newUser = new User(obj)
-  let result  = await newUser.save()
+  result  = await newUser.save()
   if (!result){
     res.json({error : 'Could not save '})
+    return false
   }
   res.json(newUser)
 })
 
-router.put('/', (req, res) => {
-  const 
+router.put('/',async (req, res) => {
+  let result = await User.findOne({id : req.body.id})
+  if (!result) res.json({error : "Could not find element by id. "})
 })
 
 router.delete('/', (req, res) => {
