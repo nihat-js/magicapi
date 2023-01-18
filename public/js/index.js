@@ -26,5 +26,3 @@ document.querySelectorAll(".box .tabs .tab").forEach(element => {
     })
   })
 })
-
-`
