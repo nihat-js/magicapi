@@ -1,6 +1,17 @@
 const express = require('express')
-
 const app = express()
+const PORT = process.env.PORT || 4140
+
+app.get('/', (req, res) => {
+   res.send('This is index')
+
+})
+
+app.get('/users',(req,res)=>{
+  res.send(users)
+})
+
+
 
 const users = [{
   id:0,
@@ -11,12 +22,8 @@ const users = [{
   }
 
 }]
-
-
-app.get('/users',(req,res)=>{
-  res.send( JSON.stringify(users))
+app.listen(PORT, () => {
+  console.log(`Server started on port ${PORT}`)
 })
-
-app.listen(process.env.PORT || 80)
 
 module.exports = app
