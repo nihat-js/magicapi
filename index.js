@@ -19,7 +19,7 @@ app.get('/', (req, res) => {
 })
 
 app.get('/users',(req,res)=>{
-  res.send(users)
+  res.json(users)
 })
 
 
