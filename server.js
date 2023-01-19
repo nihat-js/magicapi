@@ -10,12 +10,17 @@ const PORT = process.env.PORT || 4140
 
 app.use(cors())
 app.use(express.json())
-app.use(express.static('public'))
 app.use('/users',usersRouter)
 
+app.use('/css/index.css',(req,res)=>{
+  res.sendfile(path.join(__dirname,'public/css/index.css'))
+})
+app.use('/js/index.js',(req,res)=>{
+  res.sendFile(path.join(__dirname,'public/js/index.js'))
+})
 
 app.get('/',(req,res)=>{
-  res.sendFile(path.join(__dirname,'/static/index.html'))
+  res.sendFile(path.join(__dirname,'/public/index.html'))
 })
 
 const mongoose = require("mongoose")
