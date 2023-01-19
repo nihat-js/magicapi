@@ -7,8 +7,7 @@ const productsArr = require('../data/products.json')
 
 mongoose.connect(process.env.DB_URI)
 
-let User = mongoose.model('users', new mongoose.Schema({}, { timestamps: true, strict: false , _id : false }))
-let Product = mongoose.model('products', new mongoose.Schema({id : { type : String}}, { timestamps: true, strict: true , _id : false }))
+
 
 
 
